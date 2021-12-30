@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel='stylesheet' href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div id="display"></div>
+            <div class="buttons">
+                <table class = "calculator" >
+                    <tr>
+                    <td colspan = "3"> <input class = "display-box" type = "text" id = "result" disabled /> </td>
+                    <!-- clearScreen() function clear all the values -->
+                    <td> <input class = "button" type = "button" value = "C" id="clear" /> </td>
+                    </tr>
+                    <tr>
+                    <!-- display() function display the value of clicked button -->
+                    <td> <input class = "button" type = "button" id= "1" value = "1"  /> </td>
+                    <td> <input class = "button" type = "button" id= "2" value = "2" /> </td>
+                    <td> <input class = "button" type = "button" id= "3" value = "3"  /> </td>
+                    <td> <input class = "button" type = "button" id= "/" value = "/" /> </td>
+                    </tr>
+                    <tr>
+                    <td> <input class = "button" type = "button" id="4" value = "4"  /> </td>
+                    <td> <input class = "button" type = "button" id="5" value = "5"  /> </td>
+                    <td> <input class = "button" type = "button" id= "6" value = "6"  /> </td>
+                    <td> <input class = "button" type = "button" id= "-" value = "-"  /> </td>
+                    </tr>
+                    <tr>
+                    <td> <input class = "button" type = "button" id= "7" value = "7"  /> </td>
+                    <td> <input class = "button" type = "button" id= "8" value = "8" /> </td>
+                    <td> <input class = "button" type = "button" id= "9" value = "9"  /> </td>
+                    <td> <input class = "button" type = "button" id= "+" value = "+" /> </td>
+                    </tr>
+                    <tr>
+                    <td> <input class = "button" type = "button" id= "." value = "."  /> </td>
+                    <td> <input class = "button" type = "button" id= "0" value = "0"  /> </td>
+                    <!-- calculate() function evaluate the mathematical expression -->
+                    <td> <input class = "button" type = "button" id= "=" value = "=" /> </td>
+                    <td> <input class = "button" type = "button" id= "*" value = "*" /> </td>
+                    </tr>
+                    </table>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+
+    
+</body>
+</html>
