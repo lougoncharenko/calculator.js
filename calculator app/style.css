@@ -1,29 +1,125 @@
-.calculator {
-    background-color: rgb(80, 76, 76);
-    margin:50px;
-    padding:25px;
-    
+body {
+    background-color: black;
+  }
+  
+  #container {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+  }
 
-   }
-   .display-box {
-       background-color: white;
-       height:7vh;
-      
+  h1{
+      color:white;
+      text-align:center;
+      margin-top: 50px;
+  }
 
+  #calculator {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 500px;
+    height: 700px;
+    outline: none;
+    background-color:black;
+    border-color: #cc2d3a;
+    box-shadow: 0 0 10px #64dbad;
+    padding: 50px;
+    grid-template-areas:
+      "display display display display"
+      "seven eight nine add"
+      "four five six subtract"
+      "one two three multiply"
+      "zero clear equal divide";
+  }
 
-    
-   }
-   .button {
+  #display-area {
+    grid-area: display;
+    font-size: 80px;
+    background-color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  #seven {
+    grid-area: seven;
+  }
+  
+  #eight {
+    grid-area: eight;
+  }
+  
+  #nine {
+    grid-area: nine;
+  }
+  
+  #add {
+    grid-area: add;
+  }
+  
+  #four {
+    grid-area: four;
+  }
+  
+  #five {
+    grid-area: five;
+  }
+  
+  #six {
+    grid-area: six;
+  }
+  
+  #subtract {
+    grid-area: subtract;
+  }
+  
+  #one {
+    grid-area: one;
+  }
+  
+  #two {
+    grid-area: two;
+  }
+  
+  #three {
+    grid-area: three;
+  }
+  
+  #multiply {
+    grid-area: multiply;
+  }
+  
+  #zero {
+    grid-area: zero;
+  }
+  
+  #clear {
+    grid-area: clear;
+  }
+  
+  #equal {
+    grid-area: equal;
+  }
+  
+  #divide {
+    grid-area: divide;
+  }
+  
+  
+   
+   button {
        background-color: greenyellow;
        color:black;
        font-size:20px;
-       padding:15px;
-       height:50px;
-       width:50px,
+       box-shadow: 0 0 10px red;
+     
 
 
    }
-   .button:active {
+   button:active {
     background: #e5e5e5;
     -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;

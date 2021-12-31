@@ -8,46 +8,28 @@
     <link rel='stylesheet' href="style.css">
 </head>
 <body>
-    <section>
-        <div class="container">
-            <div id="display"></div>
-            <div class="buttons">
-                <table class = "calculator" >
-                    <tr>
-                    <td colspan = "3"> <input class = "display-box" type = "text" id = "result" disabled /> </td>
-                    <!-- clearScreen() function clear all the values -->
-                    <td> <input class = "button" type = "button" value = "C" id="clear" /> </td>
-                    </tr>
-                    <tr>
-                    <!-- display() function display the value of clicked button -->
-                    <td> <input class = "button" type = "button" id= "1" value = "1"  /> </td>
-                    <td> <input class = "button" type = "button" id= "2" value = "2" /> </td>
-                    <td> <input class = "button" type = "button" id= "3" value = "3"  /> </td>
-                    <td> <input class = "button" type = "button" id= "/" value = "/" /> </td>
-                    </tr>
-                    <tr>
-                    <td> <input class = "button" type = "button" id="4" value = "4"  /> </td>
-                    <td> <input class = "button" type = "button" id="5" value = "5"  /> </td>
-                    <td> <input class = "button" type = "button" id= "6" value = "6"  /> </td>
-                    <td> <input class = "button" type = "button" id= "-" value = "-"  /> </td>
-                    </tr>
-                    <tr>
-                    <td> <input class = "button" type = "button" id= "7" value = "7"  /> </td>
-                    <td> <input class = "button" type = "button" id= "8" value = "8" /> </td>
-                    <td> <input class = "button" type = "button" id= "9" value = "9"  /> </td>
-                    <td> <input class = "button" type = "button" id= "+" value = "+" /> </td>
-                    </tr>
-                    <tr>
-                    <td> <input class = "button" type = "button" id= "." value = "."  /> </td>
-                    <td> <input class = "button" type = "button" id= "0" value = "0"  /> </td>
-                    <!-- calculate() function evaluate the mathematical expression -->
-                    <td> <input class = "button" type = "button" id= "=" value = "=" /> </td>
-                    <td> <input class = "button" type = "button" id= "*" value = "*" /> </td>
-                    </tr>
-                    </table>
-            </div>
+    <div id="container">
+        <h1 class="neon">Calculator App</h1>
+        <div id="calculator">
+          <div id="display-area"></div>
+          <button class="numbers" id="nine" value='9'>9</button>
+          <button class="numbers" id="eight" value='8'>8</button>
+          <button class="numbers" id="seven" value='7'>7</button>
+          <button class="numbers" id="six" value='6'>6</button>
+          <button class="numbers" id="five" value='5'>5</button>
+          <button class="numbers" id="four" value='4'>4</button>
+          <button class="numbers" id="three" value='3'>3</button>
+          <button class="numbers" id="two" value='2'>2</button>
+          <button class="numbers" id="one" value='1'>1</button>
+          <button class="numbers" id="zero" value='0'>0</button>
+          <button class="glowing-border neon" id="clear">Clear</button>
+          <button class="glowing-border neon" id="equal" value="=">=</button>
+          <button class="operator" id="add" value="+">+</button>
+          <button class="operator" id="subtract" value='-'>-</button>
+          <button class="operator" id="divide" value='/'>/</button>
+          <button class="operator" id="multiply" value='*'>*</button>
         </div>
-    </section>
+      </div>
     <script src="main.js"></script>
 
     
